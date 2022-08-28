@@ -1,0 +1,40 @@
+.button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:disabled {
+  cursor: not-allowed;
+}
+
+.primary {
+  color: var(--white);
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+.outline {
+  color: var(--primary);
+  background-color: transparent;
+  border: 1px solid var(--primary);
+}
+
+.ghost {
+  color: var(--primary);
+  background-color: transparent;
+  border: 0;
+}
+
+.dark {
+  color: var(--white);
+  background-color: var(--black);
+  border: 1px solid var(--black);
+}
+
+.light {
+  color: var(--black);
+  background-color: var(--white);
+  border: 1px solid var(--black);
+}
