@@ -1,5 +1,22 @@
 :root {
-  --primary: #33669d;
   --white: #fff;
   --black: #000;
+  --default: #212529;
+  /* This is the value of the webkit font color for input::placeholder */
+  --shadow-dom-gray: #757575;
+  --lightest-gray: #f3f3f3;
+  --light-gray: #cdcdcc;
+  --medium-gray: #999;
+  --dark-gray: #545455;
+  --light-blue: #eaeffa;
+  --medium-blue: #7094bb;
+  --dark-blue: #33669d;
+  --midnight-blue: #2c3e50;
+  --vp-orange: #ff9933;
+  --light-green: #65a471;
+  --green: #349943;
+  --pale-red: #f8d2d6;
+  --red: #df2133;
+  --dark-red: #b31a28;
+  --yellow: #f1c40f;
 }

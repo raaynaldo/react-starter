@@ -2,18 +2,21 @@ import React from 'react';
 
 import styles from './Button.module.css';
 
-const buttonVariant = Object.freeze({
-  primary: 'primary',
-  outline: 'outline',
-  ghost: 'ghost',
-});
-
 export default function Button(props) {
-  const { children, className = '', variant = 'primary', ...rest } = props;
+  const {
+    children,
+    className = '',
+    disabled: buttonDisabled,
+    isLoading,
+    variant = 'primary',
+    ...rest
+  } = props;
+  const disabled = buttonDisabled;
   return (
     <button
       variant={variant}
       className={`${styles.button} ${styles[variant]} ${className}`}
+      disabled={disabled}
       {...rest}
     >
       {children}

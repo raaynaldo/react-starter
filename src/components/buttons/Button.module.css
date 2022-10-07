@@ -3,6 +3,7 @@
   font-size: 1rem;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.2s ease;
 }
 
 .button:disabled {
@@ -11,20 +12,44 @@
 
 .primary {
   color: var(--white);
-  background-color: var(--primary);
-  border: 1px solid var(--primary);
+  background-color: var(--dark-blue);
+  border: 1px solid var(--dark-blue);
+}
+
+.primary:hover {
+  background-color: #29527e;
+}
+
+.primary:active {
+  background-color: var(--dark-blue);
 }
 
 .outline {
-  color: var(--primary);
-  background-color: transparent;
-  border: 1px solid var(--primary);
+  color: var(--dark-blue);
+  background-color: var(--white);
+  border: 1px solid var(--dark-blue);
+}
+
+.outline:hover {
+  background-color: var(--light-blue);
+}
+
+.outline:active {
+  background-color: var(--white);
 }
 
 .ghost {
-  color: var(--primary);
+  color: var(--dark-blue);
   background-color: transparent;
   border: 0;
+}
+
+.ghost:hover {
+  background-color: var(--light-blue);
+}
+
+.ghost:active {
+  background-color: var(--white);
 }
 
 .dark {
@@ -33,8 +58,24 @@
   border: 1px solid var(--black);
 }
 
+.dark:hover {
+  background-color: #333333;
+}
+
+.dark:active {
+  background-color: var(--black);
+}
+
 .light {
   color: var(--black);
   background-color: var(--white);
   border: 1px solid var(--black);
+}
+
+.light:hover {
+  background-color: var(--lightest-gray);
+}
+
+.light:active {
+  background-color: var(--white);
 }
