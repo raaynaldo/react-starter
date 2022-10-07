@@ -24,6 +24,28 @@
   background-color: var(--dark-blue);
 }
 
+.primary:disabled {
+  background-color: #29527e;
+}
+
+.secondary {
+  color: var(--black);
+  background-color: var(--lightest-gray);
+  border: 1px solid var(--medium-gray);
+}
+
+.secondary:hover {
+  background-color: var(--light-gray);
+}
+
+.secondary:active {
+  background-color: var(--lightest-gray);
+}
+
+.secondary:disabled {
+  background-color: #29527e;
+}
+
 .outline {
   color: var(--dark-blue);
   background-color: var(--white);
@@ -36,6 +58,10 @@
 
 .outline:active {
   background-color: var(--white);
+}
+
+.outline:disabled {
+  background-color: var(--light-blue);
 }
 
 .ghost {
@@ -52,6 +78,10 @@
   background-color: var(--white);
 }
 
+.ghost:disabled {
+  background-color: var(--light-blue);
+}
+
 .dark {
   color: var(--white);
   background-color: var(--black);
@@ -66,6 +96,10 @@
   background-color: var(--black);
 }
 
+.dark:disabled {
+  background-color: #333333;
+}
+
 .light {
   color: var(--black);
   background-color: var(--white);
@@ -78,4 +112,50 @@
 
 .light:active {
   background-color: var(--white);
+}
+
+.light:disabled {
+  background-color: var(--lightest-gray);
+}
+
+.loading {
+  position: relative;
+  color: transparent;
+  transition: none;
+}
+
+.loading:disabled {
+  cursor: wait;
+}
+
+.spinner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.textBlue {
+  color: var(--dark-blue);
+}
+
+.textWhite {
+  color: var(--white);
+}
+
+.textBlack {
+  color: var(--black);
+}
+
+.animateSpin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
