@@ -1,6 +1,6 @@
-import clsx from 'clsx';
 import React from 'react';
-import { ImSpinner9 } from 'react-icons/im';
+import clsx from 'clsx';
+import { FaSpinner } from 'react-icons/fa';
 
 import styles from './Button.module.css';
 const ButtonVariant = Object.freeze({
@@ -27,21 +27,29 @@ export default function Button(props) {
   return (
     <button
       variant={variant}
-      className={`${styles.button} ${styles[variant]} ${className} ${
-        isLoading ? styles.loading : ''
-      }`}
+      // className={`${styles.button} ${styles[variant]} ${className} ${
+      //   isLoading ? styles.loading : ''
+      // }`}
+
+      className={clsx(
+        styles.button,
+        styles[variant],
+        isLoading && styles.loading,
+        className
+      )}
       disabled={disabled}
       {...rest}
     >
       {isLoading && (
         <div className={styles.spinner}>
-          <ImSpinner9
+          <FaSpinner
             className={clsx(styles.animateSpin, [
               [ButtonVariant.Primary, ButtonVariant.Dark].includes(variant) &&
                 styles.textWhite,
               [ButtonVariant.Outline, ButtonVariant.Ghost].includes(variant) &&
                 styles.textBlue,
               [ButtonVariant.Light].includes(variant) && styles.textBlack,
+              [ButtonVariant.Secondary].includes(variant) && styles.textGray,
             ])}
           />
         </div>

@@ -25,7 +25,8 @@
 }
 
 .primary:disabled {
-  background-color: #29527e;
+  background-color: var(--medium-gray);
+  border-color: var(--medium-gray);
 }
 
 .secondary {
@@ -43,7 +44,9 @@
 }
 
 .secondary:disabled {
-  background-color: #29527e;
+  background-color: var(--lightest-gray);
+  border-color: var(--light-gray);
+  color: var(--medium-gray);
 }
 
 .outline {
@@ -120,11 +123,11 @@
 
 .loading {
   position: relative;
-  color: transparent;
   transition: none;
 }
 
 .loading:disabled {
+  color: transparent;
   cursor: wait;
 }
 
@@ -133,18 +136,6 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-}
-
-.textBlue {
-  color: var(--dark-blue);
-}
-
-.textWhite {
-  color: var(--white);
-}
-
-.textBlack {
-  color: var(--black);
 }
 
 .animateSpin {
@@ -158,4 +149,20 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.textBlue {
+  color: var(--dark-blue);
+}
+
+.textWhite {
+  color: var(--white);
+}
+
+.textGray {
+  color: var(--medium-gray);
+}
+
+.textBlack {
+  color: var(--black);
 }

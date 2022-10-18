@@ -16,6 +16,9 @@ export default function App() {
         <Button variant='primary' disabled={true}>
           Disabled
         </Button>
+        <Button variant='secondary' disabled={true}>
+          Disabled
+        </Button>
         <Button variant='outline' disabled={true}>
           Disabled
         </Button>
@@ -32,19 +35,22 @@ export default function App() {
 
       <div style={{ margin: '10px', display: 'flex', gap: '20px' }}>
         <Button variant='primary' disabled={true} isLoading={true}>
-          Loading
+          Disabled
+        </Button>
+        <Button variant='secondary' disabled={true} isLoading={true}>
+          Disabled
         </Button>
         <Button variant='outline' disabled={true} isLoading={true}>
-          Loading
+          Disabled
         </Button>
         <Button variant='ghost' disabled={true} isLoading={true}>
-          Loading
+          Disabled
         </Button>
         <Button variant='dark' disabled={true} isLoading={true}>
-          Loading
+          Disabled
         </Button>
         <Button variant='light' disabled={true} isLoading={true}>
-          Loading
+          Disabled
         </Button>
       </div>
     </div>
