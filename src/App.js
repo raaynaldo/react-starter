@@ -8,8 +8,6 @@ export default function App() {
         <Button variant='secondary'>Secondary</Button>
         <Button variant='outline'>Outline</Button>
         <Button variant='ghost'>Ghost</Button>
-        <Button variant='dark'>Dark</Button>
-        <Button variant='light'>Light</Button>
       </div>
 
       <div style={{ margin: '10px', display: 'flex', gap: '20px' }}>
@@ -25,12 +23,6 @@ export default function App() {
         <Button variant='ghost' disabled={true}>
           Disabled
         </Button>
-        <Button variant='dark' disabled={true}>
-          Disabled
-        </Button>
-        <Button variant='light' disabled={true}>
-          Disabled
-        </Button>
       </div>
 
       <div style={{ margin: '10px', display: 'flex', gap: '20px' }}>
@@ -44,12 +36,6 @@ export default function App() {
           Disabled
         </Button>
         <Button variant='ghost' disabled={true} isLoading={true}>
-          Disabled
-        </Button>
-        <Button variant='dark' disabled={true} isLoading={true}>
-          Disabled
-        </Button>
-        <Button variant='light' disabled={true} isLoading={true}>
           Disabled
         </Button>
       </div>

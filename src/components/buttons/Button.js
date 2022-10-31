@@ -8,8 +8,6 @@ const ButtonVariant = Object.freeze({
   Secondary: 'secondary',
   Outline: 'outline',
   Ghost: 'ghost',
-  Dark: 'dark',
-  Light: 'light',
 });
 
 export default function Button(props) {
@@ -27,10 +25,6 @@ export default function Button(props) {
   return (
     <button
       variant={variant}
-      // className={`${styles.button} ${styles[variant]} ${className} ${
-      //   isLoading ? styles.loading : ''
-      // }`}
-
       className={clsx(
         styles.button,
         styles[variant],
@@ -44,12 +38,10 @@ export default function Button(props) {
         <div className={styles.spinner}>
           <FaSpinner
             className={clsx(styles.animateSpin, [
-              [ButtonVariant.Primary, ButtonVariant.Dark].includes(variant) &&
-                styles.textWhite,
+              [ButtonVariant.Primary].includes(variant) && styles.textWhite,
               [ButtonVariant.Secondary, ButtonVariant.Ghost].includes(
                 variant
               ) && styles.textBlue,
-              [ButtonVariant.Light].includes(variant) && styles.textBlack,
               [ButtonVariant.Outline].includes(variant) && styles.textGray,
             ])}
           />

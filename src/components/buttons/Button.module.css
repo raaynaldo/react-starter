@@ -85,42 +85,6 @@
   background-color: var(--light-blue);
 }
 
-.dark {
-  color: var(--white);
-  background-color: var(--black);
-  border: 1px solid var(--black);
-}
-
-.dark:hover {
-  background-color: #333333;
-}
-
-.dark:active {
-  background-color: var(--black);
-}
-
-.dark:disabled {
-  background-color: #333333;
-}
-
-.light {
-  color: var(--black);
-  background-color: var(--white);
-  border: 1px solid var(--black);
-}
-
-.light:hover {
-  background-color: var(--lightest-gray);
-}
-
-.light:active {
-  background-color: var(--white);
-}
-
-.light:disabled {
-  background-color: var(--lightest-gray);
-}
-
 .loading {
   position: relative;
   transition: none;
