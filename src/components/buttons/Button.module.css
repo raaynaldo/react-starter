@@ -29,21 +29,21 @@
   border-color: var(--light-gray);
 }
 
-.outline {
+.tertiary {
   color: var(--black);
   background-color: var(--lightest-gray);
   border: 1px solid var(--medium-gray);
 }
 
-.outline:hover {
+.tertiary:hover {
   background-color: var(--light-gray);
 }
 
-.outline:active {
+.tertiary:active {
   background-color: var(--lightest-gray);
 }
 
-.outline:disabled {
+.tertiary:disabled {
   background-color: var(--lightest-gray);
   border-color: var(--light-gray);
   color: var(--medium-gray);
