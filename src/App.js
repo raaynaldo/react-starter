@@ -24,21 +24,6 @@ export default function App() {
           Disabled
         </Button>
       </div>
-
-      <div style={{ margin: '10px', display: 'flex', gap: '20px' }}>
-        <Button variant='primary' disabled={true} isLoading={true}>
-          Disabled
-        </Button>
-        <Button variant='secondary' disabled={true} isLoading={true}>
-          Disabled
-        </Button>
-        <Button variant='outline' disabled={true} isLoading={true}>
-          Disabled
-        </Button>
-        <Button variant='ghost' disabled={true} isLoading={true}>
-          Disabled
-        </Button>
-      </div>
     </div>
   );
 }
