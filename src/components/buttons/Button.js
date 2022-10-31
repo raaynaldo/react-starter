@@ -6,7 +6,7 @@ import styles from './Button.module.css';
 const ButtonVariant = Object.freeze({
   Primary: 'primary',
   Secondary: 'secondary',
-  Outline: 'outline',
+  Tertiary: 'tertiary',
   Ghost: 'ghost',
   Dark: 'dark',
   Light: 'light',
@@ -50,7 +50,7 @@ export default function Button(props) {
                 variant
               ) && styles.textBlue,
               [ButtonVariant.Light].includes(variant) && styles.textBlack,
-              [ButtonVariant.Outline].includes(variant) && styles.textGray,
+              [ButtonVariant.Tertiary].includes(variant) && styles.textGray,
             ])}
           />
         </div>
