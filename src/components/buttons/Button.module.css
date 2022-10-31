@@ -25,45 +25,45 @@
 }
 
 .primary:disabled {
-  background-color: var(--medium-gray);
-  border-color: var(--medium-gray);
+  background-color: var(--light-gray);
+  border-color: var(--light-gray);
 }
 
-.secondary {
+.outline {
   color: var(--black);
   background-color: var(--lightest-gray);
   border: 1px solid var(--medium-gray);
 }
 
-.secondary:hover {
+.outline:hover {
   background-color: var(--light-gray);
 }
 
-.secondary:active {
+.outline:active {
   background-color: var(--lightest-gray);
 }
 
-.secondary:disabled {
+.outline:disabled {
   background-color: var(--lightest-gray);
   border-color: var(--light-gray);
   color: var(--medium-gray);
 }
 
-.outline {
+.secondary {
   color: var(--dark-blue);
   background-color: var(--white);
   border: 1px solid var(--dark-blue);
 }
 
-.outline:hover {
+.secondary:hover {
   background-color: var(--light-blue);
 }
 
-.outline:active {
+.secondary:active {
   background-color: var(--white);
 }
 
-.outline:disabled {
+.secondary:disabled {
   background-color: var(--light-blue);
 }
 

@@ -46,10 +46,11 @@ export default function Button(props) {
             className={clsx(styles.animateSpin, [
               [ButtonVariant.Primary, ButtonVariant.Dark].includes(variant) &&
                 styles.textWhite,
-              [ButtonVariant.Outline, ButtonVariant.Ghost].includes(variant) &&
-                styles.textBlue,
+              [ButtonVariant.Secondary, ButtonVariant.Ghost].includes(
+                variant
+              ) && styles.textBlue,
               [ButtonVariant.Light].includes(variant) && styles.textBlack,
-              [ButtonVariant.Secondary].includes(variant) && styles.textGray,
+              [ButtonVariant.Outline].includes(variant) && styles.textGray,
             ])}
           />
         </div>
